@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/task_1.js"></script>
+    <script src="js/task_3.js"></script>
+</head>
+<body>
+<div id="wrapper">
+    <h1>HW 07</h1>
+
+    <section class="task-section">
+        <div id="task-1">
+            <h2>1. System of equations</h2>
+            <img src="https://raw.githubusercontent.com/Enakoneschniy/frontend_home/07-Balashov/assets/07/system.png">
+            <div>
+                <label for="input-A">A</label>
+                <input type="text" id="input-A">
+                <label for="input-B">B</label>
+                <input type="text" id="input-B">
+            </div>
+            <div id="task-1-output" class="task-output"></div>
+            <div class="button" onclick="task1()">Calculate</div>
+        </div>
+    </section>
+
+    <section class="task-section">
+        <div id="task-2">
+            <h2>2.</h2>
+            <div id="task-2-1">
+                <h2>2.1.</h2>
+            </div>
+            <div id="task-2-2">
+                <h2>2.2.</h2>
+            </div>
+            <div id="task-2-3">
+                <h2>2.3.</h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="task-section">
+        <div id="task-3">
+            <h2>3. Day of week</h2>
+            <div>
+                <label for="input-day-n">Enter day number</label>
+                <input type="text" id="input-day-n" onkeyup="task3()" onblur="task3()">
+                <select name="select-country" id="select-country" onchange="task3()">
+                    <option value="Ukraine">Ukraine</option>
+                    <option value="USA">USA</option>
+                </select>
+            </div>
+            <div id="task-3-output" class="task-output"></div>
+        </div>
+    </section>
+</div>
+</body>
+</html>
