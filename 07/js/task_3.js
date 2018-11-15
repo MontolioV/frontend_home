@@ -6,8 +6,8 @@ const DAY_NAMES_BY_COUNTRY ={
 };
 
 function task3() {
-    document.getElementById('task-3-output').className = document.getElementById('task-3-output').className.replace(' task-output__error', '');
-    
+    taskOutputNormalState('task-3-output');
+
     const DAY_NUMBER = parseInt(document.getElementById('input-day-n').value);
     const COUNTRY_SELECTOR = document.getElementById('select-country');
     const COUNTRY = COUNTRY_SELECTOR.options[COUNTRY_SELECTOR.selectedIndex].value;
@@ -15,7 +15,7 @@ function task3() {
 
     if (isNaN(DAY_NUMBER) || DAY_NUMBER > 7 || DAY_NUMBER < 1) {
         output = 'Invalid day number';
-        document.getElementById('task-3-output').className += ' task-output__error';
+        taskOutputErrorState('task-3-output');
     } else {
         let dayName = DAY_NAMES_BY_COUNTRY[COUNTRY][DAY_NUMBER];
         output = 'In ' + COUNTRY + ' it\'s ' + dayName + '.';

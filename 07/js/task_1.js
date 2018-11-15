@@ -1,7 +1,7 @@
 ;'use strict';
 
 function task1() {
-    document.getElementById('task-1-output').className = document.getElementById('task-1-output').className.replace(' task-output__error', '');
+    taskOutputNormalState('task-1-output');
 
     const a = parseFloat(document.getElementById('input-A').value);
     const b = parseFloat(document.getElementById('input-B').value);
@@ -10,7 +10,7 @@ function task1() {
 
 function equationSystem(a, b) {
     if (isNaN(a) || isNaN(b)) {
-        errorAttention();
+        taskOutputErrorState('task-1-output');
         return 'Error: NaN';
     }
 
@@ -19,7 +19,7 @@ function equationSystem(a, b) {
         result = a + b / 2 * 4;
     } else if (b > a) {
         if (b === 0) {
-            errorAttention();
+            taskOutputErrorState('task-1-output');
             return 'Error: Division by zero attempt';
         }
         result = a - b + 2 / b * 4;
@@ -27,8 +27,4 @@ function equationSystem(a, b) {
         return 400;
     }
     return Number(result.toFixed(5));
-}
-
-function errorAttention() {
-    document.getElementById('task-1-output').className += ' task-output__error';
 }

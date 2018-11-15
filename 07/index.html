@@ -7,7 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/main.css">
+    <script src="js/utils.js"></script>
     <script src="js/task_1.js"></script>
+    <script src="js/task_2.js"></script>
     <script src="js/task_3.js"></script>
 </head>
 <body>
@@ -17,7 +19,8 @@
     <section class="task-section">
         <div id="task-1">
             <h2>1. System of equations</h2>
-            <img src="https://raw.githubusercontent.com/Enakoneschniy/frontend_home/07-Balashov/assets/07/system.png">
+            <img src="https://raw.githubusercontent.com/MontolioV/frontend_home/master/assets/07/system.png"
+                 height="300">
             <div>
                 <label for="input-A">A</label>
                 <input type="text" id="input-A">
@@ -31,15 +34,35 @@
 
     <section class="task-section">
         <div id="task-2">
-            <h2>2.</h2>
-            <div id="task-2-1">
-                <h2>2.1.</h2>
+            <h2>2. Hitting a point in the area</h2>
+            <div>
+                <label for="input-X">X</label>
+                <input type="text" id="input-X">
+                <label for="input-Y">Y</label>
+                <input type="text" id="input-Y">
             </div>
-            <div id="task-2-2">
-                <h2>2.2.</h2>
-            </div>
-            <div id="task-2-3">
-                <h2>2.3.</h2>
+            <div class="fl-h">
+                <div id="task-2-1">
+                    <h2>2.1.</h2>
+                    <img src="https://raw.githubusercontent.com/MontolioV/frontend_home/master/assets/07/800745dc822c.png"
+                         height="300">
+                    <div id="task-2-1-output" class="task-output"></div>
+                    <div class="button" onclick="task2_1()">Calculate</div>
+                </div>
+                <div id="task-2-2">
+                    <h2>2.2.</h2>
+                    <img src="https://raw.githubusercontent.com/MontolioV/frontend_home/master/assets/07/image150.jpg"
+                         height="300">
+                    <div id="task-2-2-output" class="task-output"></div>
+                    <div class="button" onclick="task2_2()">Calculate</div>
+                </div>
+                <div id="task-2-3">
+                    <h2>2.3.</h2>
+                    <img src="https://raw.githubusercontent.com/MontolioV/frontend_home/master/assets/07/img-FwEPDL.jpg"
+                         height="300">
+                    <div id="task-2-3-output" class="task-output"></div>
+                    <div class="button" onclick="task2_3()">Calculate</div>
+                </div>
             </div>
         </div>
     </section>
