@@ -7,10 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/main.css">
-    <script src="js/utils.js"></script>
-    <script src="js/task_1.js"></script>
-    <script src="js/task_2.js"></script>
-    <script src="js/task_3.js"></script>
 </head>
 <body>
 <div id="wrapper">
@@ -20,7 +16,7 @@
         <div id="task-1">
             <h2>1. System of equations</h2>
             <img src="https://raw.githubusercontent.com/MontolioV/frontend_home/master/assets/07/system.png"
-                 height="300">
+                 height="400">
             <div>
                 <label for="input-A">A</label>
                 <input type="text" id="input-A">
@@ -37,31 +33,43 @@
             <h2>2. Hitting a point in the area</h2>
             <div>
                 <label for="input-X">X</label>
-                <input type="text" id="input-X">
+                <input type="text" id="input-X" onkeyup="task2()">
                 <label for="input-Y">Y</label>
-                <input type="text" id="input-Y">
+                <input type="text" id="input-Y" onkeyup="task2()">
             </div>
             <div class="fl-h">
                 <div id="task-2-1">
                     <h2>2.1.</h2>
-                    <img src="https://raw.githubusercontent.com/MontolioV/frontend_home/master/assets/07/800745dc822c.png"
-                         height="300">
+                    <div class="input-diagram-container">
+                        <img class="input-diagram" height="400" alt="task-2-1-img"
+                             src="https://raw.githubusercontent.com/MontolioV/frontend_home/master/assets/07/800745dc822c.png">
+                        <div class="dot dot-x0y0"></div>
+                        <div class="dot dot-pointer"></div>
+                        <div id="overlay-1" class="input-diagram-overlay"></div>
+                    </div>
                     <div id="task-2-1-output" class="task-output"></div>
-                    <div class="button" onclick="task2_1()">Calculate</div>
                 </div>
                 <div id="task-2-2">
                     <h2>2.2.</h2>
-                    <img src="https://raw.githubusercontent.com/MontolioV/frontend_home/master/assets/07/image150.jpg"
-                         height="300">
+                    <div class="input-diagram-container">
+                        <img class="input-diagram" height="400" alt="task-2-1-img"
+                             src="https://raw.githubusercontent.com/MontolioV/frontend_home/master/assets/07/image150.jpg">
+                        <div class="dot dot-x0y0"></div>
+                        <div class="dot dot-pointer"></div>
+                        <div id="overlay-2" class="input-diagram-overlay"></div>
+                    </div>
                     <div id="task-2-2-output" class="task-output"></div>
-                    <div class="button" onclick="task2_2()">Calculate</div>
                 </div>
                 <div id="task-2-3">
                     <h2>2.3.</h2>
-                    <img src="https://raw.githubusercontent.com/MontolioV/frontend_home/master/assets/07/img-FwEPDL.jpg"
-                         height="300">
+                    <div class="input-diagram-container">
+                        <img class="input-diagram" height="400" alt="task-2-1-img"
+                             src="https://raw.githubusercontent.com/MontolioV/frontend_home/master/assets/07/img-FwEPDL.jpg">
+                        <div class="dot dot-x0y0"></div>
+                        <div class="dot dot-pointer"></div>
+                        <div id="overlay-3" class="input-diagram-overlay"></div>
+                    </div>
                     <div id="task-2-3-output" class="task-output"></div>
-                    <div class="button" onclick="task2_3()">Calculate</div>
                 </div>
             </div>
         </div>
@@ -81,6 +89,11 @@
             <div id="task-3-output" class="task-output"></div>
         </div>
     </section>
+
+    <script src="js/utils.js"></script>
+    <script src="js/task_1.js"></script>
+    <script src="js/task_2.js"></script>
+    <script src="js/task_3.js"></script>
 </div>
 </body>
 </html>

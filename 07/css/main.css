@@ -45,3 +45,37 @@ body * {
 .task-section {
     margin-top: 30px;
 }
+
+.input-diagram-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.input-diagram-container * {
+    margin: 0;
+}
+
+.input-diagram-overlay {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.dot {
+    position: absolute;
+    z-index: 1;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.dot-x0y0 {
+    background: blue;
+}
+
+.dot-pointer {
+    background: red;
+}

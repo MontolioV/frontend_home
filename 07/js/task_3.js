@@ -1,6 +1,6 @@
 ;'use strict';
 
-const DAY_NAMES_BY_COUNTRY ={
+const DAY_NAMES_BY_COUNTRY = {
     'Ukraine': ['', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
     'USA': ['', 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
 };
