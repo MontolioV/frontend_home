@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/tasks.js" async defer></script>
+</head>
+<body>
+<div id="wrapper">
+    <div class="task-section">
+        <h2>Task 1</h2>
+        <p>Пользователь вводит два числа. Найти и вывести максимальное из двух чисел.</p>
+        <div class="button" onclick="task1();">Run</div>
+    </div>
+    <div class="task-section">
+        <h2>Task 2</h2>
+        <p>Найти максимальное из двух чисел. Учтите вариант равенства чисел</p>
+        <div class="button" onclick="task2();">Run</div>
+    </div>
+    <div class="task-section">
+        <h2>Task 3</h2>
+        <p>В первом подъезде квартиры с 1 по 20. Во втором с 21 по 48. В третьем с 49 по 90. Пользователь вводит номер
+            квартиры. Программа должна указать в каком подъезде находится данная квартира. Программа должна учитывать
+            вариант ввода чисел за пределами диапазона 1..90.</p>
+        <div class="button" onclick="task3();">Run</div>
+    </div>
+    <div class="task-section">
+        <h2>Task 4</h2>
+        <p>Пользователь вводит логин и пароль. Если логин и пароль совпадают с указанными ниже, то выводится «Добро
+            пожаловать». Если не совпадают – то «Ошибка входа» </p>
+        <img class="table-img" src="../assets/08/08-1.png">
+        <div class="button" onclick="task4();">Run</div>
+    </div>
+    <div class="task-section">
+        <h2>Task 5</h2>
+        <p>Пользователь вводит год рождения. Программа показывает количество лет и если лет больше или равно 16, то
+            пишет – «добро пожаловать», если нет – «вход воспрещен».</p>
+        <div class="button" onclick="task5();">Run</div>
+    </div>
+    <div class="task-section">
+        <h2>Task 6</h2>
+        <p>Создайте программу, которая выводит надбавку за стаж. Пользователь вводит стаж работы, а программа пишет ему
+            надбавку. </p>
+        <img class="table-img" src="../assets/08/08-2.png">
+        <div class="button" onclick="task6();">Run</div>
+    </div>
+    <div class="task-section">
+        <h2>Task 7</h2>
+        <p>Вывести числа от 4 до 400 на экран.</p>
+        <div class="button" onclick="task7();">Run</div>
+    </div>
+    <div class="task-section">
+        <h2>Task 8</h2>
+        <p>Вывести числа в последовательности: 4 7 10 13 с помощью цикла.</p>
+        <div class="button" onclick="task8();">Run</div>
+    </div>
+    <div class="task-section">
+        <h2>Task 9</h2>
+        <p>Вывести числа 654 653 652 до нуля.</p>
+        <div class="button" onclick="task9();">Run</div>
+    </div>
+    <div class="task-section">
+        <h2>Task 10</h2>
+        <p>Вывести все годы с 1983 до 2017.</p>
+        <div class="button" onclick="task10();">Run</div>
+    </div>
+    <div class="task-section">
+        <h2>Task 11</h2>
+        <p>Вывести числа -4 -2 0 2 4 6 ...100.</p>
+        <div class="button" onclick="task11();">Run</div>
+    </div>
+    <div class="task-section">
+        <h2>Task 12</h2>
+        <p>С помощью цикла напечатайте таблицу умножения на 7 от 1 до 9.</p>
+        <div class="button" onclick="task12();">Run</div>
+    </div>
+    <div class="task-section">
+        <h2>Task 13</h2>
+        <p>Выведите с помощью цикла коды спецсимволов от 1000 до 2000. Напомню, что спецсимвол получается комбинацией
+            &#число; Например ӆ</p>
+        <div class="button" onclick="task13();">Run</div>
+    </div>
+    <div class="task-section">
+        <h2>Task 14</h2>
+        <p>Найти сумму чисел от 0 до 100 (включительно). (0+1+2+3+4+5).</p>
+        <div class="button" onclick="task14();">Run</div>
+    </div>
+    <div class="task-section">
+        <h2>Task 15</h2>
+        <p>С помощью цикла вывести произведение чисел от 1 до 50.</p>
+        <div class="button" onclick="task15();">Run</div>
+    </div>
+    <div class="task-section">
+        <h2>Task 16</h2>
+        <p>Заполните массив следующим образом: в первый элемент запишите 'x', во второй 'xx', в третий 'xxx' и так
+            далее</p>
+        <div class="button" onclick="task16();">Run</div>
+    </div>
+    <div class="task-section">
+        <h2>Task 17</h2>
+        <p>Заполните массив следующим образом: в первый элемент запишите '1', во второй '22', в третий '333' и так
+            далее.</p>
+        <div class="button" onclick="task17();">Run</div>
+    </div>
+    <div class="task-section">
+        <h2>Task 18</h2>
+        <p>Сделайте функцию arrayFill, которая будет заполнять массив заданными значениями. Первым параметром функция
+            принимает значение, которым заполнять массив, а вторым - сколько элементов должно быть в массиве. Пример:
+            arrayFill('x', 5) сделает массив ['x', 'x', 'x', 'x', 'x'].</p>
+        <div class="button" onclick="task18();">Run</div>
+    </div>
+    <div class="task-section">
+        <h2>Task 19</h2>
+        <p>Дан массив с числами. Узнайте сколько элементов с начала массива надо сложить, чтобы в сумме получилось
+            больше 10-ти.</p>
+        <div class="button" onclick="task19();">Run</div>
+    </div>
+    <div class="task-section">
+        <h2>Task 20</h2>
+        <p>Дан массив с числами. Не используя метода reverse переверните его элементы в обратном порядке.</p>
+        <div class="button" onclick="task20();">Run</div>
+    </div>
+    <div class="task-section">
+        <h2>Task 21</h2>
+        <p>Дан двухмерный массив с числами, например [[1, 2, 3], [4, 5], [6]]. Найдите сумму элементов этого массива.
+            Массив, конечно же, может быть произвольным.</p>
+        <div class="button" onclick="task21();">Run</div>
+    </div>
+    <div class="task-section">
+        <h2>Task 22</h2>
+        <p>Дан трехмерный массив с числами, например [[[1, 2], [3, 4]], [[5, 6], [7, 8]]]. Найдите сумму элементов этого
+            массива. Массив, конечно же, может быть произвольным.</p>
+        <div class="button" onclick="task22();">Run</div>
+    </div>
+    <div class="task-section">
+        <h2>Task 23</h2>
+        <p>Сделайте функцию isNumberInRange, которая параметром принимает число и проверяет, что оно больше нуля и
+            меньше 10. Если это так - пусть функция возвращает true, если не так - false.</p>
+        <div class="button" onclick="task23();">Run</div>
+    </div>
+    <div class="task-section">
+        <h2>Task 24</h2>
+        <p>Дан массив с числами. Запишите в новый массив только те числа, которые больше нуля и меньше 10-ти. Для этого
+            используйте вспомогательную функцию isNumberInRange из предыдущей задачи.</p>
+        <div class="button" onclick="task24();">Run</div>
+    </div>
+    <div class="task-section">
+        <h2>Task 25</h2>
+        <p>Сделайте функцию isEven() (even - это четный), которая параметром принимает целое число и проверяет: четное
+            оно или нет. Если четное - пусть функция возвращает true, если нечетное - false.</p>
+        <div class="button" onclick="task25();">Run</div>
+    </div>
+    <div class="task-section">
+        <h2>Task 26</h2>
+        <p>Дан массив с целыми числами. Создайте из него новый массив, где останутся лежать только четные из этих чисел.
+            Для этого используйте вспомогательную функцию isEven из предыдущей задачи.</p>
+        <div class="button" onclick="task26();">Run</div>
+    </div>
+    <div class="task-section">
+        <h2>Task 27</h2>
+        <p>Сделайте функцию getDivisors, которая параметром принимает число и возвращает массив его делителей (чисел, на
+            которое делится данное число).</p>
+        <div class="button" onclick="task27();">Run</div>
+    </div>
+    <div class="task-section">
+        <h2>Task 28</h2>
+        <p>Дан массив [1, 2, 3, 4, 5, 6]. Сделать из него массив [2, 1, 4, 3, 6, 5]</p>
+        <div class="button" onclick="task28();">Run</div>
+    </div>
+    <div class="task-section">
+        <h2>Task 29</h2>
+        <p>Дан массив [1, 2, 3, 4, 5, 6]. Сделать из него массив [5, 6, 3, 4, 1, 2]</p>
+        <div class="button" onclick="task29();">Run</div>
+    </div>
+</div>
+</body>
+</html>
