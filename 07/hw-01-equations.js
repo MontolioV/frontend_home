@@ -15,7 +15,8 @@ switch (x) {
     case a < b:
         let x2 = a - b + ((2 / b) * 4);
         alert(x2);
+        break;
     case a === b:
         alert(400);
-
+        break;
 }
