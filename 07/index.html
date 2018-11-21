@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div id="wrapper">
+    <h1>HW 07</h1>
+
+    <section class="task-section">
+        <div id="task-1">
+            <h2>1. System of equations</h2>
+            <img src="https://raw.githubusercontent.com/MontolioV/frontend_home/master/assets/07/system.png"
+                 height="400">
+            <div>
+                <label for="input-A">A</label>
+                <input type="text" id="input-A">
+                <label for="input-B">B</label>
+                <input type="text" id="input-B">
+            </div>
+            <div id="task-1-output" class="task-output"></div>
+            <div class="button" onclick="task1()">Calculate</div>
+        </div>
+    </section>
+
+    <section class="task-section">
+        <div id="task-2">
+            <h2>2. Hitting a point in the area</h2>
+            <div>
+                <label for="input-X">X</label>
+                <input type="text" id="input-X" onkeyup="task2()">
+                <label for="input-Y">Y</label>
+                <input type="text" id="input-Y" onkeyup="task2()">
+            </div>
+            <div class="fl-h">
+                <div id="task-2-1">
+                    <h2>2.1.</h2>
+                    <div class="input-diagram-container">
+                        <img class="input-diagram" height="400" alt="task-2-1-img"
+                             src="https://raw.githubusercontent.com/MontolioV/frontend_home/master/assets/07/800745dc822c.png">
+                        <div class="dot dot-x0y0"></div>
+                        <div class="dot dot-pointer"></div>
+                        <div id="overlay-1" class="input-diagram-overlay"></div>
+                    </div>
+                    <div id="task-2-1-output" class="task-output"></div>
+                </div>
+                <div id="task-2-2">
+                    <h2>2.2.</h2>
+                    <div class="input-diagram-container">
+                        <img class="input-diagram" height="400" alt="task-2-1-img"
+                             src="https://raw.githubusercontent.com/MontolioV/frontend_home/master/assets/07/image150.jpg">
+                        <div class="dot dot-x0y0"></div>
+                        <div class="dot dot-pointer"></div>
+                        <div id="overlay-2" class="input-diagram-overlay"></div>
+                    </div>
+                    <div id="task-2-2-output" class="task-output"></div>
+                </div>
+                <div id="task-2-3">
+                    <h2>2.3.</h2>
+                    <div class="input-diagram-container">
+                        <img class="input-diagram" height="400" alt="task-2-1-img"
+                             src="https://raw.githubusercontent.com/MontolioV/frontend_home/master/assets/07/img-FwEPDL.jpg">
+                        <div class="dot dot-x0y0"></div>
+                        <div class="dot dot-pointer"></div>
+                        <div id="overlay-3" class="input-diagram-overlay"></div>
+                    </div>
+                    <div id="task-2-3-output" class="task-output"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="task-section">
+        <div id="task-3">
+            <h2>3. Day of week</h2>
+            <div>
+                <label for="input-day-n">Enter day number</label>
+                <input type="text" id="input-day-n" onkeyup="task3()" onblur="task3()">
+                <select name="select-country" id="select-country" onchange="task3()">
+                    <option value="Ukraine">Ukraine</option>
+                    <option value="USA">USA</option>
+                </select>
+            </div>
+            <div id="task-3-output" class="task-output"></div>
+        </div>
+    </section>
+
+    <script src="js/utils.js"></script>
+    <script src="js/task_1.js"></script>
+    <script src="js/task_2.js"></script>
+    <script src="js/task_3.js"></script>
+</div>
+</body>
+</html>
