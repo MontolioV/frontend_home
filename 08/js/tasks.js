@@ -366,6 +366,79 @@ function task29() {
     console.log(result);
 }
 
+function task30() {
+    function adjustLength(number) {
+        let s = number.toString();
+        let digits = s.length;
+        for (let i = 0; i < 4 - digits; i++) {
+            s += ' ';
+        }
+        return s;
+    }
+
+    for (let i = 1; i < 11; i++) {
+        let collector = '';
+        for (let j = 1; j < 11; j++) {
+            collector += adjustLength(i * j);
+        }
+        console.log(collector);
+    }
+
+    console.log();
+
+    for (let i = 0; i < 10; i++) {
+        let collector = '';
+        for (let j = 0; j < 10; j++) {
+            if (i === j) {
+                collector += '1 ';
+            } else if (i + j === 9) {
+                collector += '2 ';
+            } else if (i < j) {
+                if (j < 9 - i) {
+                    collector += '3 ';
+                } else {
+                    collector += '4 ';
+                }
+            } else if (i < 9 - j) {
+                collector += '6 ';
+            } else {
+                collector += '5 ';
+            }
+        }
+        console.log(collector);
+    }
+
+    console.log();
+
+    function pascalTriangle(arraySize) {
+        if (arraySize === 0) {
+            return [];
+        }
+
+        const UNDERLYING_ARRAY = pascalTriangle(arraySize - 1);
+        const RESULT = [];
+        for (let i = 0; i < UNDERLYING_ARRAY.length; i++) {
+            if (i !== 0) {
+                RESULT[i] = UNDERLYING_ARRAY[i - 1] + UNDERLYING_ARRAY[i];
+            } else {
+                RESULT[i] = 1;
+            }
+        }
+
+        RESULT.push(1);
+
+        let collector = '';
+        for (const resultElement of RESULT) {
+            collector += adjustLength(resultElement);
+        }
+        console.log(collector);
+
+        return RESULT;
+    }
+
+    pascalTriangle(10)
+}
+
 function isNumberInRange(number) {
     return number > 0 && number < 10;
 }
