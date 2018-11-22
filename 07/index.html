@@ -17,12 +17,12 @@
             <h2>1. System of equations</h2>
             <img src="https://raw.githubusercontent.com/MontolioV/frontend_home/master/assets/07/system.png"
                  height="400">
-            <div>
+            <form>
                 <label for="input-A">A</label>
                 <input type="text" id="input-A">
                 <label for="input-B">B</label>
                 <input type="text" id="input-B">
-            </div>
+            </form>
             <div id="task-1-output" class="task-output"></div>
             <div class="button" onclick="task1()">Calculate</div>
         </div>
@@ -31,12 +31,12 @@
     <section class="task-section">
         <div id="task-2">
             <h2>2. Hitting a point in the area</h2>
-            <div>
+            <form>
                 <label for="input-X">X</label>
                 <input type="text" id="input-X" onkeyup="task2()">
                 <label for="input-Y">Y</label>
                 <input type="text" id="input-Y" onkeyup="task2()">
-            </div>
+            </form>
             <div class="fl-h">
                 <div id="task-2-1">
                     <h2>2.1.</h2>
@@ -78,14 +78,14 @@
     <section class="task-section">
         <div id="task-3">
             <h2>3. Day of week</h2>
-            <div>
+            <form>
                 <label for="input-day-n">Enter day number</label>
                 <input type="text" id="input-day-n" onkeyup="task3()" onblur="task3()">
                 <select name="select-country" id="select-country" onchange="task3()">
                     <option value="Ukraine">Ukraine</option>
                     <option value="USA">USA</option>
                 </select>
-            </div>
+            </form>
             <div id="task-3-output" class="task-output"></div>
         </div>
     </section>
