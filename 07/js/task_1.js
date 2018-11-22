@@ -14,7 +14,7 @@ function equationSystem(a, b) {
         return 'Error: NaN';
     }
 
-    let result;
+    let result = 400;
     if (a > b) {
         result = a + b / 2 * 4;
     } else if (b > a) {
@@ -23,8 +23,6 @@ function equationSystem(a, b) {
             return 'Error: Division by zero attempt';
         }
         result = a - b + 2 / b * 4;
-    } else {
-        return 400;
     }
     return Number(result.toFixed(5));
 }
