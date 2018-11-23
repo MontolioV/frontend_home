@@ -47,25 +47,17 @@ else {
 
 /*
 //Задача 4
-let data = [
-  {login: 'ivan', password: '334455'},
-  {login: 'alex', password: '777'},
-  {login: 'petr', password: 'd5678'}
-]
+let enterLogin = prompt ('Введите логин', '');
+let enterPassword = prompt ('Введите пароль', '');
 
-let enterLogin = prompt ('Введите логин');
-let enterPassword = prompt ('Введите пароль');
 
-for ( let element of data) {
-  console.log (element.login, element.password);
-  if (enterLogin===element.login && enterPassword===element.password) {
-      alert ('Добро пожаловать');
-      break;
-  }
-  else {
-    alert ('Ошибка входа');
-    break;
-  }
+if (enterLogin==='ivan' && enterPassword==='334455' ||
+    enterLogin==='alex' && enterPassword==='777' ||
+    enterLogin==='petr' && enterPassword==='d5678') {
+    alert ('Добро пожаловать');
+}
+else {
+  alert ('Ошибка входа');
 }
 */
 
@@ -83,26 +75,17 @@ else {
 /*
 //Задача 6
 let experience = +prompt ('Введите стаж работы');
-if (experience === 0) {
-  alert ('Надбавка неположена');
+if (experience >= 0 && experience <=3) {
+  alert ('Надбавка 0');
 }
-else if (experience >= 1 && experience <=10) {
+else if (experience >= 4 && experience <=10) {
   alert ('Надбавка 10%');
 }
 else if (experience >= 11 && experience <=20) {
   alert ('Надбавка 20%');
 }
-else if (experience >= 12 && experience <=30) {
-  alert ('Надбавка 30%');
-}
-else if (experience >= 31 && experience <=40) {
-  alert ('Надбавка 40%');
-}
-else if (experience >= 41 && experience <=50) {
-  alert ('Надбавка 50%');
-}
-else {
-  alert ('Пора на пенсию!');
+else if (experience >= 21) {
+  alert ('Надбавка 25%');
 }
 */
 
@@ -143,11 +126,9 @@ for (let i = -4; i <= 100; i+=2) {
 
 /*
 //Задача 12
-do {
   for (let i = 1; i <= 9; i++) {
   console.log (i * 7);
 }
-} while (i < 0);
 */
 
 /*
