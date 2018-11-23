@@ -1,10 +1,10 @@
 'use strict';
 
+
 /*
 //Задача 1
 let a = +prompt ('Введите a', '');
 let b = +prompt ('Введите b', '');
-
 if (a > b) {
   alert ('больше число ' + a);
 }
@@ -17,7 +17,6 @@ else {
 //Задача 2
 let a = +prompt ('Введите a', '');
 let b = +prompt ('Введите b', '');
-
 if (a > b) {
   alert ('больше число ' +a);
 }
@@ -31,9 +30,8 @@ else if (a === b) {
 
 /*
 //Задача 3
-let apartment = +prompt ('Введите номер квартиры');
-
-if (apartment >= 1 && apartment <= 21) {
+let apartment = +prompt ('Введите номер квартиры', '');
+if (apartment >= 1 && apartment <= 20) {
   alert ('Подъезд № 1');
 }
 else if (apartment >= 21 && apartment <= 48) {
@@ -49,25 +47,32 @@ else {
 
 /*
 //Задача 4
+let data = [
+  {login: 'ivan', password: '334455'},
+  {login: 'alex', password: '777'},
+  {login: 'petr', password: 'd5678'}
+]
+
 let enterLogin = prompt ('Введите логин');
-let enterPassword = +prompt ('Введите пароль');
+let enterPassword = prompt ('Введите пароль');
 
-let login = 'Петя';
-let password = 12345;
-
-if (enterLogin === login && enterPassword === password) {
-  alert ('Добро пожаловать');
-}
-else {
-  alert ('Ошибка входа\n![логин и пароль](/assets/08/08-1.png)');
+for ( let element of data) {
+  console.log (element.login, element.password);
+  if (enterLogin===element.login && enterPassword===element.password) {
+      alert ('Добро пожаловать');
+      break;
+  }
+  else {
+    alert ('Ошибка входа');
+    break;
+  }
 }
 */
 
 /*
 //Задача 5
 let age = 2018 - +prompt ('Введите год рождения');
-
-if (age >= 18) {
+if (age >= 16) {
   alert ('Вам ' +age +' лет! Добро пожаловать');
 }
 else {
@@ -78,7 +83,6 @@ else {
 /*
 //Задача 6
 let experience = +prompt ('Введите стаж работы');
-
 if (experience === 0) {
   alert ('Надбавка неположена');
 }
@@ -132,7 +136,7 @@ for (let i = 1983; i <= 2017; i++) {
 
 /*
 //Задача 11
-for (let i = -4; i <= 100; i++) {
+for (let i = -4; i <= 100; i+=2) {
   console.log (i);
 }
 */
@@ -157,7 +161,7 @@ for (let i = 1000; i <= 2000; i++) {
 
 /*
 //Задача 14
-var sum = 0;
+let sum = 0;
 for (let i = 0; i <= 100; i++) {
   sum += i;
 }
@@ -166,7 +170,7 @@ console.log (sum);
 
 /*
 //Задача 15
-var op = 1;
+let op = 1;
 for (let i = 1; i <= 50; i++) {
   op *= i;
 }
