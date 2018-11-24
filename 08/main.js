@@ -47,17 +47,28 @@ else {
 
 /*
 //Задача 4
+let data = [
+  {login: 'ivan', password:'334455'},
+  {login: 'alex', password:'777'},
+  {login: 'petr', password:'d5678'}
+]
 let enterLogin = prompt ('Введите логин', '');
 let enterPassword = prompt ('Введите пароль', '');
 
+let success = false;
 
-if (enterLogin==='ivan' && enterPassword==='334455' ||
-    enterLogin==='alex' && enterPassword==='777' ||
-    enterLogin==='petr' && enterPassword==='d5678') {
+for (let element of data) {
+  if (enterLogin===element.login &&  enterPassword===element.password) {
+    success = true;
+    break;
+  }
+}
+
+if (success) {
     alert ('Добро пожаловать');
 }
 else {
-  alert ('Ошибка входа');
+    alert ('Ошибка входа');
 }
 */
 
