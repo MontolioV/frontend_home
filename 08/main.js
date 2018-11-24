@@ -1,5 +1,6 @@
 'use strict';
 
+
 /*
 //Задача 1
 let a = +prompt ('Введите a', '');
