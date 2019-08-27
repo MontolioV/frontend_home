@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    background: lightgray;
+}
+
+body * {
+    margin: 10px;
+}
+
+.fl-h {
+    display: flex;
+}
+
+.fl-v {
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+    width: 100px;
+    height: 30px;
+    background: linear-gradient(to bottom, #deffca, #d7ff4f 30%, greenyellow);
+    border: 1px solid green;
+    border-radius: 4px;
+    margin: 10px;
+    padding: 10px 24px;
+    color: #1868ff;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.task-section {
+    margin-bottom: 100px;
+}
+
+.table-img {
+    width: 100%;
+}
